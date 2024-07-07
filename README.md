@@ -81,7 +81,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    command: yarn install && yarn start
+    command: sh -c "yarn install && yarn start"
     restart: "no"
     volumes:
       - ./frontend:/app
